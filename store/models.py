@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 # Categorias de los Productos
 class Category(models.Model):
     name = models.CharField(max_length=50)
