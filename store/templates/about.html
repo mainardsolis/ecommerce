@@ -1,32 +1,87 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
 <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Acerca de nosotros...</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Bienvenidos a nuestro proyecto final...</p>
-                </div>
-            </div>
-        </header>
+<header class="bg-dark py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="text-center text-white">
+      <h1 class="display-4 fw-bolder">Proyecto Final</h1>
+      <p class="lead fw-normal text-white-50 mb-0">
+        <p>Objetivo: Desarrollar un sistema que nos permita presentar un catálogo de productos a ofrecer.</p>
+                <p>Un producto podrá tener: nombre, descripción, categoría, precio y un estado de activo. Además, deberá poderse incluir una imagen ilustrativa (de forma opcional, pueden tener múltiples imágenes).</p>
+      </p>
+    </div>
+  </div>
+</header>
 
-        <div class="container">
-        	<div class="row">
-        		<center>
-        			<div class="col-8">
-        				<br/><br/>
-<p align="justify">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin erat ex, eu egestas ipsum malesuada eget. Morbi lobortis felis in nisl cursus, eget dapibus magna elementum. Duis quis erat massa. Proin sed mollis libero, eget venenatis justo. Suspendisse tincidunt est pretium, congue erat sit amet, fringilla nisl. In vitae nunc tristique, aliquam tortor sed, feugiat velit. Donec ut urna mi. Nam ultrices pharetra gravida. Maecenas nulla velit, eleifend eget iaculis vel, iaculis vel orci. Nam sed ex vitae nisi fermentum gravida. Ut aliquet turpis sem, ac consequat lorem iaculis non. Vestibulum nisl quam, efficitur vel ullamcorper id, consequat ac massa. Quisque iaculis sapien arcu, quis lobortis eros aliquet pharetra.
-<br/><br/>
-Sed non condimentum dolor. Vivamus euismod ullamcorper urna, eget malesuada nibh bibendum a. Cras tincidunt, mauris ut faucibus finibus, eros diam dapibus arcu, ut eleifend dui elit ut ligula. Donec in orci eu urna molestie tristique. Etiam efficitur ut orci ut imperdiet. Vestibulum venenatis nunc id congue convallis. Quisque sodales nulla augue, eget feugiat turpis iaculis vitae. Nunc non tellus tincidunt, hendrerit nunc sit amet, convallis tortor. Quisque et tempor diam. Vivamus aliquet id lorem in sodales. Nulla a consectetur ex, eget maximus neque. Suspendisse varius, lectus vel auctor vestibulum, diam lacus consectetur risus, vel gravida arcu enim eget lectus. Duis sodales pretium interdum.
-<br/><br/>
-Etiam gravida non orci eget vestibulum. Donec et tristique massa, at laoreet nisl. Sed lobortis est massa, a blandit nibh tincidunt eu. Nam at tortor egestas, suscipit justo blandit, ultrices nisl. Phasellus imperdiet placerat eros, sed fermentum mi scelerisque id. Duis dignissim leo eu orci sodales mattis. Suspendisse nisl velit, tristique eget ante nec, egestas scelerisque metus. In pellentesque odio purus, vitae scelerisque massa sodales sit amet. Ut ex augue, elementum sed luctus a, facilisis et dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam mauris sapien, malesuada id hendrerit sed, accumsan nec nunc. Fusce consectetur, metus ac suscipit varius, nulla ante scelerisque tellus, ut pretium dui velit at lectus. Suspendisse sem nunc, viverra tempus venenatis sit amet, mattis a nibh. Nulla pretium dictum ipsum, eget placerat urna semper id. 
-</p>
-<br/><br/>
-        			</div>
-        		</center>
-        	</div>
+<div class="container">
+  <div class="row">
+    <center>
+      <div class="col-8">
+        <br /><br />
+        <p align="justify"></p>
+        <div class="card border-info">
+          <div class="card-header"><p>Vamos a desarrollar una aplicación que nos permita:</p></div>
+          <div class="card-body">
+            <h5 class="card-title"><ul>
+                <li>Mostrar el catálogo de productos que se ofrece.</li>
+                <li>Poder ingresar a ver el detalle de un producto.</li>
+              </ul></h5>
+            <p class="card-text">
+                
+                
+                
+                <p>Tendremos dos tipos de usuarios: usuarios administradores y usuarios “normales”.</p>
+                <p>Los usuarios administradores podrán:</p>
+                <ul>
+                  <li>Crear nuevos productos.</li>
+                  <li>Editar productos.</li>
+                  <li>Eliminar productos.</li>
+                  <li>Crear categorías.</li>
+                  <li>Editar categorías.</li>
+                  <li>Eliminar categorías.</li>
+                  <li>Desactivar productos.</li>
+                  <li>Listar usuarios creados, y poder diferenciarlos de los administradores.</li>
+                </ul>
+                <p>Además, los usuarios que NO forman parte de la plataforma deberán poder (usuarios no autenticados):</p>
+                <ul>
+                  <li>Visualizar la lista de productos.</li>
+                  <li>Ver el detalle de un producto.</li>
+                  <li>Registrarse.</li>
+                </ul>
+                <p>Los usuarios que sí se encuentran registrados podrán:</p>
+                <ul>
+                  <li>Iniciar/Cerrar Sesión.</li>
+                  <li>Marcar productos como favorito desde el catálogo.</li>
+                  <li>Marcar productos como favoritos desde el detalle.</li>
+                  <li>Quitar productos de favoritos.</li>
+                  <li>Listar productos agregados como favoritos.</li>
+                  <li>Ver su información de perfil.</li>
+                  <li>Editar datos personales.</li>
+                </ul>
+                <p>Nota: Incluir los filtros que considere necesario en diferentes lugares.</p>
+                <p>Modalidad y Forma de entrega:</p>
+                <ul>
+                  <li>Deberán enviar al correo ibanezlucas@ecom.com.ar el link a sus repositorios.</li>
+                  <li>Acepto esta información como tiempo máximo: Lunes a las 16:00.</li>
+                  <li>Nombre y Apellido completo.</li>
+                  <li>NRO DOCUMENTO.</li>
+                  <li>Fecha de Nacimiento.</li>
+                  <li>MAIL.</li>
+                  <li>Plazo máximo de entrega: Domingo 16 de Junio 23:59hs.</li>
+                  <li>Lunes 17: Exposición de trabajos a las 14hs.</li>
+                  <li>Obligatorio.</li>
+                  <li>Cantidad de integrantes máximo: 2 integrantes.</li>
+                  <li>Deberán tener en sus repositorios el archivo de requirements.txt.</li>
+                  <li>Deberán tener archivo .gitignore.</li>
+                  <li>Deberán presentar un readme indicando las características de su proyecto, y especificaciones técnicas, como así también, el/los autor/es.</li>
+                </ul>
+            </p>
+          </div>
         </div>
+        <br /><br />
+      </div>
+    </center>
+  </div>
+</div>
 
 {% endblock %}
